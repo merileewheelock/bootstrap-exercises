@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Layout Practice</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<style type="text/css" media="screen">
+
+		.inner-box{
+			background-color: lightblue;
+			padding: 5px;
+			border: 1px solid black;
+			max-width: 100%;
+			margin-top: 10px;
+		}
+
+		.ad{
+			background-color: blue;
+			padding: 5px;
+			border: 1px solid black;
+			max-width: 100%;
+			margin-top: 10px;
+		}
+
+		.header, .hero, .body, .sidebar, .footer{
+			background-color: CornflowerBlue;
+			border: 1px solid black;
+			padding: 5px;
+			margin-top: 10px;
+		}
+		
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="row header">
+			<h1>1. Header</h1>
+			<div class="col-md-2 col-sm-3 col-xs-12 inner-box text-center">1.1 Brand</div>
+			<div class="col-md-7 col-sm-6 col-xs-7 inner-box text-center">1.2 Global Nav</div>
+			<div class="col-md-3 col-sm-3 col-xs-5 inner-box text-center">1.3 Tools</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-9 hero">
+				<h1>2. Hero</h1>
+				<div class="col-md-8 col-sm-12 hidden-xs inner-box text-center">2.1 Hero Feature</div>
+				<div class="col-md-4 col-sm-12 col-xs-12 inner-box text-center">2.2 Hero Call to Action</div>
+			</div>
+			<div class="col-md-3 hidden-sm hidden-xs ad">
+				<h1>3. Ad</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-9 body">
+				<h1>4. Body</h1>
+				<div class="col-md-4 col-sm-9 col-xs-12 inner-box text-center">4.1 Article Feature</div>
+				<div class="hidden-lg hidden-md col-sm-3 col-xs-12 ad">
+					<h1>Ad</h1>
+				</div>
+				<div class="col-md-8 col-sm-12 col-xs-12 inner-box text-center">4.2 Article Listing</div>
+			</div>
+			<div class="col-md-3 col-sm-12 hidden-xs sidebar">
+				<h1>5. Sidebar</h1>
+				<div class="col-md-12 col-sm-12 inner-box text-center">5.1 Sidebar Feature</div>
+			</div>
+		</div>
+		<div class="row footer">
+			<h1>6. Footer</h1>
+		</div>
+	</div>
+
+</body>
+</html>

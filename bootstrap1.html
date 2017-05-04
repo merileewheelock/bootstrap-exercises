@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<<style type="text/css" media="screen">
+
+		.row div{
+			background-color: #CACACA;
+			border: solid 1px black;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="jumbotron">
+		The Braves win!
+	</div>
+
+	<div class="container"> <!-- container-fluid goes the width of the screen. container does not. -->
+		<div class="row">
+			<div class="col-md-8">I am 8 columns wide</div>
+			<div class="col-md-4">I am 4 columns wide</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">I am 2 columns wide</div>
+			<div class="col-md-2">I am 2 columns wide</div>
+			<div class="col-md-2">I am 2 columns wide</div>
+			<div class="col-md-2">I am 2 columns wide</div>
+			<div class="col-md-4">I am 4 columns wide</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">I'm 6 columns on xs, 4 everywhere else</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-4">I'm offset by 4 (33% margin left) and 4 columns wide (33% width)</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">I'm 4 wide (33%) and offset 2 (1/6) margin</div>
+			<div class="col-sm-4">I'm 4 wide</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-sm-offset-3">I'm 2 col wide and offset 3</div>
+			<div class="col-sm-2 col-sm-offset-3 col-md-6 col-md-offset-6">I'm 2 col wide and offset 3</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-9">
+			Level 1: .col-sm-9
+			<div class="row">
+				<div class="col-xs-8 col-sm-6">Nested div - Level 2: .col-xs-8 .col-sm-6</div>
+				<div class="col-xs-4 col-sm-6">Nested div - Level 2: .col-xs-4 .col-sm-6</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
